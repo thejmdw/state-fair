@@ -5,7 +5,9 @@ eventHub.addEventListener("click",
     (event) => {
         if (event.target.id === "rideTicket") {
             const rideEvent = new CustomEvent("rideTicketPurchased")
-            eventHub.dispatchEvent(rideEvent)           
+            eventHub.dispatchEvent(rideEvent)
+            const addTicket = new CustomEvent("ticketAdded")
+            eventHub.dispatchEvent(addTicket)        
         }
     })
 
@@ -13,7 +15,9 @@ eventHub.addEventListener("click",
     (event) => {
         if (event.target.id === "foodTicket") {
             const foodEvent = new CustomEvent("foodTicketPurchased")
-            eventHub.dispatchEvent(foodEvent)            
+            eventHub.dispatchEvent(foodEvent)
+            const addTicket = new CustomEvent("ticketAdded")
+            eventHub.dispatchEvent(addTicket)           
         }
     })
     
@@ -21,7 +25,9 @@ eventHub.addEventListener("click",
     (event) => {
         if (event.target.id === "gameTicket") {
             const gameEvent = new CustomEvent("gameTicketPurchased")
-            eventHub.dispatchEvent(gameEvent)            
+            eventHub.dispatchEvent(gameEvent)
+            const addTicket = new CustomEvent("ticketAdded")
+            eventHub.dispatchEvent(addTicket)             
         }
     })
     
@@ -29,7 +35,9 @@ eventHub.addEventListener("click",
     (event) => {
         if (event.target.id === "sideshowTicket") {
             const sideshowEvent = new CustomEvent("sideshowTicketPurchased")
-            eventHub.dispatchEvent(sideshowEvent)            
+            eventHub.dispatchEvent(sideshowEvent)
+            const addTicket = new CustomEvent("ticketAdded")
+            eventHub.dispatchEvent(addTicket)             
         }
     })
     
@@ -37,7 +45,9 @@ eventHub.addEventListener("click",
     (event) => {
         if (event.target.id === "packageTicket") {
             const fullPackageEvent = new CustomEvent("packageTicketPurchased")
-            eventHub.dispatchEvent(fullPackageEvent)            
+            eventHub.dispatchEvent(fullPackageEvent)
+            const addTicket = new CustomEvent("ticketAdded")
+            eventHub.dispatchEvent(addTicket)            
         }
     })
 
